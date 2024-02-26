@@ -3,7 +3,7 @@
 :root {
     --color-base: #64748b;
     --color-header: #1e293b; 
-    --color-text: #94a3b8;
+    --color-text: #cbd5e1;
 }
 
 
@@ -36,7 +36,7 @@ button {
     border: 2px solid var(--color-base);
     cursor: pointer;
     transition: .3s;
-    border-radius: 10%;
+    border-radius: 10px 10px 10px 10px;
     color: var(--color-text); 
 }
 
@@ -45,14 +45,67 @@ button:hover {
     color: var(--color-header);
 }
 
-
 dialog {
     width: 300px;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid var(--color-text);
+    color: var(--color-text);
+    background-color: var(--color-header);
 }
+
+#add-movie {
+    height: 25px;
+    border: 3px solid var(--color-text);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#release-date {
+    color: var(--color-text);
+    padding-left: 5px;
+}
+
+#amount-seen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#genre-inquiry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+select{
+    background-color: var(--color-header);
+    color: var(--color-text);
+}
+
+input {
+    background-color: var(--color-header);
+    border: 1px solid var(--color-text);
+    border-radius: 10px 10px 10px 10px;
+    height: 25px;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 #close-dialog {
     border: none;
     font-size: 1.8em;
+    padding: 0;
 }
 
 #close-dialog:hover {
