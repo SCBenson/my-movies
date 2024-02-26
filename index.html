@@ -16,12 +16,12 @@
     <main>
         <dialog id="new-dialog">
             <div class="dialog-header">
-                <h2>Add a favourite movie!</h2>
+                <h2 id="dialog-title">Add a favourite movie!</h2>
                 <button id="close-dialog"><ion-icon name="close-circle-outline"></ion-icon></button>
             </div>
             <form>
                 <label for="movie-name">Name of the movie:</label>
-                <input type="text" id="movie-name" placeholder="Scooby Doo" required>
+                <input type="text" id="movie-name" required>
                 <label for="director-name">Director:</label>
                 <input type="text" id="director-name" required>
                 <label for="release-date">Year of release:</label>
@@ -43,18 +43,18 @@
 
             <p>How many times have you wathced this movie?</p>
             
-            <form>
-                <label for="times-watched">times.</label>
+            <form id="amount-seen">
                 <input type="number" id="times-watched" name="times-watched">
+                <label for="times-watched">time(s).</label>
             </form>
 
             <p>Would you recommend this movie to your family/friends?</p>
 
-            <form>
-                <label for="yes">Yes</label>
+            <form id="genre-inquiry">
                 <input type="radio" id="yes" name="recommendable" value="Yes">
-                <label for="no">No</label>
+                <label for="yes">Yes</label>
                 <input type="radio" id="no" name="recommendable" value="No">
+                <label for="no">No</label>
             </form>
 
         </dialog>
