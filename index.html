@@ -6,14 +6,19 @@
     <title>My Movies</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body">
 
-    <div class="header">
-    </div>
+    <header id="header">
+        <h1 id="header-title">My Movies</h1>
+        <button id="add-movie">Add Movie</button>
+    </header>
 
     <main>
-        <dialog open>
-            <p>Add a favourite movie!</p>
+        <dialog id="new-dialog">
+            <div class="dialog-header">
+                <h2>Add a favourite movie!</h2>
+                <button id="close-dialog"><ion-icon name="close-circle-outline"></ion-icon></button>
+            </div>
             <form>
                 <label for="movie-name">Name of the movie:</label>
                 <input type="text" id="movie-name" placeholder="Scooby Doo" required>
@@ -58,5 +63,7 @@
 
         <footer></footer>
         <script src="src/index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
