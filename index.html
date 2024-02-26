@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="header">
+    </div>
+
+    <main>
+        <dialog open>
+            <p>Add a favourite movie!</p>
+            <form>
+                <label for="movie-name">Name of the movie:</label>
+                <input type="text" id="movie-name" placeholder="Scooby Doo" required>
+                <label for="director-name">Director:</label>
+                <input type="text" id="director-name" required>
+                <label for="release-date">Year of release:</label>
+                <input type="date" id="release-date" placeholder="dd-mm-yyyy" required>
+                <label for="genre">Genre:</label>
+                <select name="genres" id="genre" onchange="showOtherInput()">
+                    <option value="">---Please choose an option---</option>
+                    <option value="Action">Action</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="text" id="otherGenreInput" style="display: none;" placeholder="Please name the genre..">
+
+                <button type="submit" id="movie-card">Finish</button>
+            </form>
+
+            <p>How many times have you wathced this movie?</p>
+            
+            <form>
+                <label for="times-watched">times.</label>
+                <input type="number" id="times-watched" name="times-watched">
+            </form>
+
+            <p>Would you recommend this movie to your family/friends?</p>
+
+            <form>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="recommendable" value="Yes">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="recommendable" value="No">
+            </form>
+
+        </dialog>
+
+    </main>
+
+        <footer></footer>
+        <script src="src/index.js"></script>
+</body>
+</html>
